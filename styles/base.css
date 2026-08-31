@@ -1,0 +1,137 @@
+:root {
+    --primary-color: #1e3a8a;
+    --secondary-color: #0f172a;
+    --accent-color: #38bdf8;
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --text-color: #1e293b;
+    --font-heading: 'Roboto', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header & Span Display Block */
+header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+#course-title {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+}
+
+/* Flex Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.85rem 1.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+    color: #000000;
+}
+
+/* Centered Main Layout */
+main {
+    max-width: 960px;
+    width: 90%;
+    margin: 2rem auto;
+    flex: 1 0 auto;
+}
+
+main h1 {
+    font-family: var(--font-heading);
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+}
+
+/* CSS Grid for Cards */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+    font-family: var(--font-heading);
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.card ul {
+    list-style-position: inside;
+    line-height: 1.8;
+}
+
+.card a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: auto;
+    line-height: 1.6;
+}
+
+footer p {
+    font-size: 0.95rem;
+}
