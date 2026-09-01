@@ -1,10 +1,10 @@
 :root {
-    --primary-color: #1e40af;       /* Deep Classic Blue */
-    --primary-hover: #1e3a8a;       /* Darker Navy Blue */
-    --nav-bg: #dbeafe;              /* Soft Light Blue */
-    --nav-text: #0f172a;            /* Dark Slate */
-    --nav-hover: #1d4ed8;           /* Vivid Blue */
-    --bg-color: #f0f4f8;            /* Cool Off-White/Ice Blue */
+    --primary-color: #1e40af;
+    --primary-hover: #1e3a8a;
+    --nav-bg: #dbeafe;
+    --nav-text: #0f172a;
+    --nav-hover: #1d4ed8;
+    --bg-color: #f0f4f8;
     --card-bg: #ffffff;
     --text-color: #1e293b;
     --border-color: #cbd5e1;
@@ -27,7 +27,7 @@ body {
     flex-direction: column;
 }
 
-/* Header & Span Requirement */
+/* Header */
 header {
     background-color: var(--primary-color);
     color: #ffffff;
@@ -44,7 +44,7 @@ header {
     padding: 0 1rem;
 }
 
-/* Navigation - CSS Flexbox */
+/* Navigation - Flexbox */
 nav ul {
     display: flex;
     justify-content: center;
@@ -73,7 +73,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Main Layout - CSS Grid */
+/* Main Grid Layout */
 main {
     max-width: 1100px;
     width: 92%;
@@ -85,9 +85,16 @@ main {
     gap: 1.5rem;
 }
 
-/* Cards */
-.card,
-.card2 {
+main h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+/* Card Styling */
+.card {
     background-color: var(--card-bg);
     border: 1px solid var(--border-color);
     border-radius: 10px;
@@ -114,7 +121,7 @@ h3 {
     font-size: 1.2rem;
 }
 
-/* Content Containers */
+/* Internal Card Layout */
 .container {
     display: flex;
     flex-direction: column;
@@ -152,7 +159,7 @@ h3 {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* Resources Sidebar (.card2) */
+/* Resources Card */
 .card2 ul {
     list-style-type: none;
     padding-top: 0.5rem;
@@ -189,6 +196,7 @@ footer {
     padding: 1.5rem 1rem;
     font-size: 1rem;
     line-height: 1.6;
+    margin-top: 2rem;
 }
 
 footer p {
