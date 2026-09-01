@@ -3,57 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Ricardo Corona</title>
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals course home page for Cuitlahuac Corona featuring course resources, web development projects, and profile details.">
+    <title>WDD 131 – Dynamic Web Fundamentals – Ricardo Corona</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals – Ricardo Corona – Course home page activity and resources portal.">
     <meta name="author" content="Ricardo Corona">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <!-- Main Stylesheet -->
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="styles/base.css">
 
-    <!-- JavaScript with defer -->
+    <!-- JavaScript -->
     <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
-        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
         <nav>
-            <a href="https://www.linkedin.com/in/cuitlahuac-ricardo-corona-espinoza-64647b182/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://byupw.instructure.com/" target="_blank" rel="noopener noreferrer">Canvas</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank" rel="noopener noreferrer">Scripture</a>
-            <a href="#">Final Project</a>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/cuitlahuac-ricardo-corona-espinoza-64647b182/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank" rel="noopener noreferrer">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank" rel="noopener noreferrer">Scripture</a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">Final Project</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <h1>Cuitlahuac Corona</h1>
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="container">
+                <div class="bloque">
+                    <div class="text">
+                        <p>My name is Ricardo Corona. I am from Chalco, Mexico, and I am studying Software Development through BYU. I enjoy learning web technologies, software architecture, and building efficient digital solutions.</p>
+                    </div>
+                    <div class="imagen">
+                        <img src="images/ricardo-corona.jpeg" alt="Ricardo Corona profile picture" width="200" height="200" loading="lazy">
+                    </div>
+                </div>
 
-        <div class="cards-container">
-            <section class="card">
-                <h2>About Me</h2>
-                <img src="images/ricardo-corona.jpeg" alt="Ricardo Corona profile picture" width="200" height="200" loading="lazy">
-                <p>My name is Cuitlahuac Corona, I am from Mexico. Welcome to my course portal for WDD 131. I am passionate about web development, dynamic interfaces, performance testing, and continuous technical growth.</p>
-            </section>
+                <h3>Chalco, Estado de México</h3>
+                <div class="bloque">
+                    <div class="imagen">
+                        <img src="images/chalco.jpeg" alt="Flag of Mexico" width="200" height="130" loading="lazy">
+                    </div>
+                    <div class="text">
+                        <p>Chalco is a historic municipality located in the eastern region of the State of Mexico, situated in the Valley of Mexico just southeast of Mexico City near the iconic Popocatépetl and Iztaccíhuatl volcanoes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <section class="card">
-                <h2>Web Dev Resources</h2>
-                <img src="images/web-dev.png" alt="Web development resources icon" width="300" height="200" loading="lazy">
-                <ul>
-                    <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a></li>
-                    <li><a href="https://css-tricks.com/" target="_blank" rel="noopener noreferrer">CSS-Tricks</a></li>
-                    <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3Schools</a></li>
-                    <li><a href="https://coolors.co/" target="_blank" rel="noopener noreferrer">Coolors.co</a></li>
-                </ul>
-            </section>
-        </div>
+        <section class="card2">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3Schools</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer">MDN - CSS</a></li>
+                <li><a href="https://css-tricks.com/" target="_blank" rel="noopener noreferrer">CSS-Tricks</a></li>
+                <li><a href="https://coolors.co/" target="_blank" rel="noopener noreferrer">Coolors.co</a></li>
+            </ul>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="currentyear"></span> | Cuitlahuac Corona | Mexico</p>
+        <p>&copy; <span id="currentyear"></span> Ricardo Corona | Chalco, Mexico</p>
         <p id="lastModified"></p>
     </footer>
 </body>
