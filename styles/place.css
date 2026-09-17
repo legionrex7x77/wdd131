@@ -1,0 +1,162 @@
+:root {
+    /* China-inspired theme colors (Chinese Red & Golden Yellow) */
+    --primary-color: #de2910;
+    --secondary-color: #ffde00;
+    --accent-color: #a81c07;
+    --card-bg: rgba(255, 255, 255, 0.92);
+    --text-dark: #1e293b;
+    --border-color: #e2e8f0;
+    --font-main: 'Kanit', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-dark);
+    background-color: #f8fafc;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Mobile-First Main Hero Container */
+main {
+    flex: 1 0 auto;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Base Cards (Stacked layout on mobile) */
+.card {
+    background-color: #ffffff;
+    border-bottom: 2px solid var(--border-color);
+    padding: 1.5rem;
+}
+
+.card h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.card ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.card li {
+    font-size: 1rem;
+}
+
+.label {
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+/* Weather Icon Mobile Rules */
+.weather-icon-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.weather-svg {
+    width: 48px;
+    height: 48px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Large / Desktop View Wireframe Alignment */
+@media (min-width: 800px) {
+    .hero {
+        position: relative;
+        max-width: 1200px;
+        margin: 2rem auto;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    }
+
+    .hero picture img {
+        height: 600px;
+    }
+
+    /* Position Data Card on the left over the hero image */
+    .data-card {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        width: 320px;
+        background-color: var(--card-bg);
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        border-radius: 10px;
+        backdrop-filter: blur(4px);
+    }
+
+    /* Position Weather Card on the right over the hero image */
+    .weather-card {
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+        width: 300px;
+        background-color: var(--card-bg);
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        border-radius: 10px;
+        backdrop-filter: blur(4px);
+    }
+
+    /* Hide the mobile SVG icon on wide screens */
+    .weather-svg {
+        display: none;
+    }
+
+    /* Requirement: Pseudo-element weather emoji after Heading */
+    #weather-title::after {
+        content: " ⛅";
+        font-size: 1.3rem;
+        vertical-align: middle;
+    }
+}

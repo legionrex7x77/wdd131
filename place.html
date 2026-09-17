@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Country Page – China</title>
+    <meta name="description" content="WDD 131 Week 03 Country Page project featuring China, dynamic weather metrics, and responsive hero layouts.">
+    <meta name="author" content="Ricardo Corona">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles/place.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>China</h1>
+    </header>
+
+    <main>
+        <!-- Responsive Hero Section -->
+        <div class="hero">
+            <picture>
+                <source srcset="images/great-wall-of-china.webp" media="(min-width: 1000px)">
+                <source srcset="images/china-hero-medium.webp" media="(min-width: 600px)">
+                <img src="images/great-wall-of-china.webp" alt="The Great Wall of China" width="500" height="350">
+            </picture>
+
+            <!-- Data Card -->
+            <section class="card data-card">
+                <h2>Data</h2>
+                <ul>
+                    <li><span class="label">Area:</span> 9,596,961 sq km</li>
+                    <li><span class="label">Population:</span> 1.41 Billion</li>
+                    <li><span class="label">Capital:</span> Beijing</li>
+                    <li><span class="label">Languages:</span> Standard Mandarin</li>
+                    <li><span class="label">Currency:</span> Renminbi (Yuan, ¥)</li>
+                    <li><span class="label">Time Zone:</span> UTC+8</li>
+                    <li><span class="label">Calling Code:</span> +86</li>
+                    <li><span class="label">Internet TLD:</span> .cn</li>
+                </ul>
+            </section>
+
+            <!-- Weather Card -->
+            <section class="card weather-card">
+                <h2 id="weather-title">Weather</h2>
+                <div class="weather-icon-container">
+                    <!-- SVG icon visible in mobile view -->
+                    <img src="images/weather.svg" alt="Mostly cloudy icon" class="weather-svg" width="48" height="48">
+                </div>
+                <ul>
+                    <li><span class="label">Temperature:</span> <span id="temp">8</span>°C</li>
+                    <li><span class="label">Conditions:</span> Mostly Cloudy</li>
+                    <li><span class="label">Wind:</span> <span id="wind">12</span> km/h</li>
+                    <li><span class="label">Wind Chill:</span> <span id="chill"></span></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Ricardo Corona | Chalco, Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
