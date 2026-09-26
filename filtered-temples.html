@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Filtered Temples Album</title>
+    <meta name="description" content="WDD 131 assignment showcasing dynamically generated and filtered temple cards with native lazy loading.">
+    <meta name="author" content="Ricardo Corona">
+
+    <!-- Fuentes Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+
+    <!-- JavaScript diferido -->
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <span class="site-title">Temple Album</span>
+            <button id="menu-btn" class="hamburger" aria-label="Toggle navigation menu">&#9776;</button>
+        </div>
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="#" id="filter-home" class="active">Home</a></li>
+                <li><a href="#" id="filter-old">Old</a></li>
+                <li><a href="#" id="filter-new">New</a></li>
+                <li><a href="#" id="filter-large">Large</a></li>
+                <li><a href="#" id="filter-small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 id="gallery-title">Home</h1>
+        <!-- Contenedor donde JavaScript inyectará las tarjetas -->
+        <section id="temple-cards" class="temple-grid" aria-live="polite">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Ricardo Corona | Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
