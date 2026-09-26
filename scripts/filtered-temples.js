@@ -49,25 +49,25 @@ const temples = [
         imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
     {
-        templeName: "Salta Argentina",
-        location: "Salta, Argentina",
-        dedicated: "2024, June, 16",
-        area: 27000,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salta-argentina/400x250/salta_argentina_temple_exterior.jpg"
+        templeName: "Tucson Arizona",
+        location: "Tucson, Arizona, United States",
+        dedicated: "2017, August, 13",
+        area: 38216,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/tucson-arizona/400x250/tucson-temple-lds-905753-wallpaper.jpg"
     },
     {
-        templeName: "Salt Lake Utah",
-        location: "Salt Lake City, Utah, United States",
-        dedicated: "1893, April, 6",
-        area: 382207,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/2018/400x250/slctemple7.jpg"
+        templeName: "Logan Utah",
+        location: "Logan, Utah, United States",
+        dedicated: "1884, May, 17",
+        area: 119619,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/logan-utah/400x250/logan-temple-768119-wallpaper.jpg"
     },
     {
-        templeName: "Colonia Juárez Chihuahua Mexico",
-        location: "Colonia Juárez, Chihuahua, Mexico",
-        dedicated: "1999, March, 6",
-        area: 6800,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/colonia-juarez-mexico/400x250/colonia-juarez-mexico-temple-763428-wallpaper.jpg"
+        templeName: "Monticello Utah",
+        location: "Monticello, Utah, United States",
+        dedicated: "1998, July, 26",
+        area: 11225,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/monticello-utah/400x250/monticello-temple-lds-1029809-wallpaper.jpg"
     }
 ];
 
