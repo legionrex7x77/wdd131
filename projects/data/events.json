@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "category": "Marcha",
+    "date": "2026-10-15",
+    "time": "10:00 AM",
+    "location": "Monumento a la Revolución, CDMX",
+    "title_es": "Marcha Nacional por la Infancia y la Convivencia Familiar",
+    "title_en": "National Rally for Child Rights and Family Contact",
+    "desc_es": "Movilización pacífica exigiendo celeridad procesal en juzgados familiares y respeto irrestricto al interés superior de la niñez.",
+    "desc_en": "Peaceful mobilization demanding prompt family court rulings and unconditional protection for the best interest of children."
+  },
+  {
+    "id": 2,
+    "category": "Asesoría",
+    "date": "2026-10-24",
+    "time": "11:00 AM",
+    "location": "Plaza Principal, Chalco, Edo. Méx.",
+    "title_es": "Jornada de Orientación y Recepción de Expedientes",
+    "title_en": "Legal Guidance & Case Intake Clinic",
+    "desc_es": "Revisión documental técnica gratuita para casos con retraso judicial u omisión institucional en la zona oriente.",
+    "desc_en": "Free technical document review for family cases facing procedural delay or institutional neglect."
+  },
+  {
+    "id": 3,
+    "category": "Foro",
+    "date": "2026-11-08",
+    "time": "5:00 PM",
+    "location": "Transmisión Virtual / Zoom",
+    "title_es": "Taller: Integración de Pruebas y Quejas Administrativas",
+    "title_en": "Workshop: Evidence Gathering and Administrative Complaints",
+    "desc_es": "Capacitación práctica para madres y padres sobre cómo documentar hechos y fundamentar solicitudes de celeridad procesal.",
+    "desc_en": "Practical training on structuring verifiable evidence and filing promptness requests before judicial councils."
+  }
+]

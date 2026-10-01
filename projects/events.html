@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos y Convocatorias | Infancia Sana</title>
+    <meta name="description" content="Calendario de marchas, jornadas de asesoría jurídica gratuita y mesas de trabajo de Infancia Sana.">
+    <meta name="author" content="Ricardo Corona">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/i18n.js" defer></script>
+    <script src="scripts/events.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="brand">
+                <span class="logo-icon">⚖️</span>
+                <h1>Infancia Sana</h1>
+            </div>
+            <div class="header-controls">
+                <button id="lang-toggle" class="btn-lang" aria-label="Cambiar idioma">EN</button>
+                <button id="menu-btn" class="hamburger" aria-label="Abrir menú de navegación">&#9776;</button>
+            </div>
+        </div>
+        <nav id="nav-bar" aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html" data-i18n="nav_home">Inicio</a></li>
+                <li><a href="cases.html" data-i18n="nav_cases">Evaluación de Casos</a></li>
+                <li><a href="routes.html" data-i18n="nav_routes">Rutas de Acción</a></li>
+                <li><a href="events.html" class="active" data-i18n="nav_events">Eventos y Convocatorias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-banner">
+            <h2 data-i18n="nav_events">Eventos y Convocatorias</h2>
+            <p data-i18n="events_subtitle">Actividades pacíficas, mesas de registro de expedientes y asambleas informativas.</p>
+        </section>
+
+        <!-- Filtros por Categoría (Array Methods en JavaScript) -->
+        <div class="filter-controls">
+            <button class="filter-btn active" data-filter="all" data-i18n="filter_all">Todos</button>
+            <button class="filter-btn" data-filter="Marcha" data-i18n="filter_march">Marchas</button>
+            <button class="filter-btn" data-filter="Asesoría" data-i18n="filter_legal">Asesorías</button>
+            <button class="filter-btn" data-filter="Foro" data-i18n="filter_forum">Foros</button>
+        </div>
+
+        <section id="events-grid" class="events-grid" aria-live="polite">
+            <!-- JavaScript inyectará las tarjetas de eventos aquí -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> <span data-i18n="footer_text">Infancia Sana | Ricardo Corona | Chalco, México</span></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
