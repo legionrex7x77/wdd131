@@ -1,0 +1,271 @@
+:root {
+    --primary: #1e3a8a;
+    --primary-light: #2563eb;
+    --accent: #d97706;
+    --bg-page: #f8fafc;
+    --card-bg: #ffffff;
+    --text-dark: #0f172a;
+    --text-muted: #475569;
+    --border-color: #cbd5e1;
+    --focus-ring: #93c5fd;
+    --font-family: 'Kanit', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-page);
+    color: var(--text-dark);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--primary);
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+main {
+    flex: 1 0 auto;
+    width: 100%;
+    max-width: 650px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+form {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+label, legend {
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 1rem;
+}
+
+.required-indicator {
+    color: #dc2626;
+    font-weight: 700;
+}
+
+.optional-text {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.65rem 0.75rem;
+    font-family: inherit;
+    font-size: 0.95rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: var(--text-dark);
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--primary-light);
+    box-shadow: 0 0 0 3px var(--focus-ring);
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Rating Stars Fieldset */
+.rating-group {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+.rating-group legend {
+    padding: 0 0.5rem;
+}
+
+.stars-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 0.5rem;
+}
+
+.star-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+    cursor: pointer;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+}
+
+.star-label input[type="radio"] {
+    cursor: pointer;
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+.star-icon {
+    color: var(--accent);
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+/* Features Checkboxes Fieldset */
+.features-group {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+}
+
+@media (min-width: 480px) {
+    .features-group {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.features-group legend {
+    padding: 0 0.5rem;
+}
+
+.check-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 400;
+    color: var(--text-dark);
+    cursor: pointer;
+}
+
+.check-label input[type="checkbox"] {
+    width: 1.1rem;
+    height: 1.1rem;
+    cursor: pointer;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: var(--primary);
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.85rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--primary-light);
+}
+
+/* Confirmation Page */
+.confirmation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirmation-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    max-width: 500px;
+    width: 100%;
+}
+
+.success-icon {
+    font-size: 3rem;
+    color: #16a34a;
+    margin-bottom: 0.5rem;
+}
+
+.confirmation-card h2 {
+    color: var(--primary);
+    margin-bottom: 0.75rem;
+}
+
+.counter-display {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background-color: #f1f5f9;
+    border-radius: 6px;
+    border: 1px dashed var(--border-color);
+}
+
+.counter-display strong {
+    color: var(--primary);
+    font-size: 1.25rem;
+}
+
+.btn-return {
+    display: inline-block;
+    background-color: var(--primary);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.65rem 1.25rem;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.btn-return:hover {
+    background-color: var(--primary-light);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary);
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}

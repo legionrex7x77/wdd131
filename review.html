@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation | WDD 131</title>
+    <meta name="description" content="Submission confirmation page for the product review assignment tracking total submissions via localStorage.">
+    <meta name="author" content="Ricardo Corona">
+
+    <link rel="preconnect" href="[https://fonts.googleapis.com](https://fonts.googleapis.com)">
+    <link rel="preconnect" href="[https://fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
+    <link href="[https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&display=swap](https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&display=swap)" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+
+    <script src="scripts/review.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main class="confirmation-container">
+        <section class="confirmation-card">
+            <div class="success-icon">&#10004;</div>
+            <h2>Thank You!</h2>
+            <p>Your product review has been submitted successfully.</p>
+            
+            <div class="counter-display">
+                <p>Total reviews submitted from this browser: <strong id="review-count">0</strong></p>
+            </div>
+
+            <a href="form.html" class="btn-return">Submit Another Review</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Ricardo Corona | Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

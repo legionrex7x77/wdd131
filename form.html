@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form | WDD 131</title>
+    <meta name="description" content="Product review form assignment for WDD 131 demonstrating form validation, semantic markup, and dynamic population.">
+    <meta name="author" content="Ricardo Corona">
+
+    <link rel="preconnect" href="[https://fonts.googleapis.com](https://fonts.googleapis.com)">
+    <link rel="preconnect" href="[https://fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
+    <link href="[https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&display=swap](https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&display=swap)" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+            <!-- Product Name -->
+            <div class="form-group">
+                <label for="product-select">Product Name <span class="required-indicator">*</span></label>
+                <select id="product-select" name="product" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </div>
+
+            <!-- Overall Rating -->
+            <fieldset class="form-group rating-group">
+                <legend>Overall Rating <span class="required-indicator">*</span></legend>
+                <div class="stars-container">
+                    <label for="star1" class="star-label">
+                        <input type="radio" id="star1" name="rating" value="1" required>
+                        <span class="star-icon">&star;</span> 1
+                    </label>
+                    <label for="star2" class="star-label">
+                        <input type="radio" id="star2" name="rating" value="2" required>
+                        <span class="star-icon">&star;</span> 2
+                    </label>
+                    <label for="star3" class="star-label">
+                        <input type="radio" id="star3" name="rating" value="3" required>
+                        <span class="star-icon">&star;</span> 3
+                    </label>
+                    <label for="star4" class="star-label">
+                        <input type="radio" id="star4" name="rating" value="4" required>
+                        <span class="star-icon">&star;</span> 4
+                    </label>
+                    <label for="star5" class="star-label">
+                        <input type="radio" id="star5" name="rating" value="5" required>
+                        <span class="star-icon">&star;</span> 5
+                    </label>
+                </div>
+            </fieldset>
+
+            <!-- Date of Installation -->
+            <div class="form-group">
+                <label for="install-date">Date of Installation <span class="required-indicator">*</span></label>
+                <input type="date" id="install-date" name="installation_date" required>
+            </div>
+
+            <!-- Useful Features -->
+            <fieldset class="form-group features-group">
+                <legend>Useful Features <span class="optional-text">(Check all that apply)</span></legend>
+                <label for="feature-durability" class="check-label">
+                    <input type="checkbox" id="feature-durability" name="features" value="durability">
+                    Durability
+                </label>
+                <label for="feature-ease" class="check-label">
+                    <input type="checkbox" id="feature-ease" name="features" value="ease_of_use">
+                    Ease of Use
+                </label>
+                <label for="feature-performance" class="check-label">
+                    <input type="checkbox" id="feature-performance" name="features" value="performance">
+                    Performance
+                </label>
+                <label for="feature-design" class="check-label">
+                    <input type="checkbox" id="feature-design" name="features" value="design">
+                    Design
+                </label>
+            </fieldset>
+
+            <!-- Written Review -->
+            <div class="form-group">
+                <label for="written-review">Written Review <span class="optional-text">(Optional)</span></label>
+                <textarea id="written-review" name="review" rows="4" placeholder="Share your experience with the product..."></textarea>
+            </div>
+
+            <!-- User Name -->
+            <div class="form-group">
+                <label for="user-name">Your Name <span class="optional-text">(Optional)</span></label>
+                <input type="text" id="user-name" name="user_name" placeholder="John Doe">
+            </div>
+
+            <!-- Submit Button -->
+            <input type="submit" id="submit-review" value="Post Review">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Ricardo Corona | Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
