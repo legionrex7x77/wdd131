@@ -110,7 +110,6 @@ textarea {
     resize: vertical;
 }
 
-/* Rating Stars Fieldset */
 .rating-group {
     border: 1px solid var(--border-color);
     border-radius: 6px;
@@ -150,7 +149,6 @@ textarea {
     line-height: 1;
 }
 
-/* Features Checkboxes Fieldset */
 .features-group {
     border: 1px solid var(--border-color);
     border-radius: 6px;
@@ -185,7 +183,6 @@ textarea {
     cursor: pointer;
 }
 
-/* Submit Button */
 input[type="submit"] {
     background-color: var(--primary);
     color: #ffffff;
@@ -203,64 +200,6 @@ input[type="submit"]:hover {
     background-color: var(--primary-light);
 }
 
-/* Confirmation Page */
-.confirmation-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.confirmation-card {
-    background-color: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 2.5rem 1.5rem;
-    text-align: center;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-    max-width: 500px;
-    width: 100%;
-}
-
-.success-icon {
-    font-size: 3rem;
-    color: #16a34a;
-    margin-bottom: 0.5rem;
-}
-
-.confirmation-card h2 {
-    color: var(--primary);
-    margin-bottom: 0.75rem;
-}
-
-.counter-display {
-    margin: 1.5rem 0;
-    padding: 1rem;
-    background-color: #f1f5f9;
-    border-radius: 6px;
-    border: 1px dashed var(--border-color);
-}
-
-.counter-display strong {
-    color: var(--primary);
-    font-size: 1.25rem;
-}
-
-.btn-return {
-    display: inline-block;
-    background-color: var(--primary);
-    color: #ffffff;
-    text-decoration: none;
-    padding: 0.65rem 1.25rem;
-    border-radius: 6px;
-    font-weight: 600;
-    transition: background-color 0.2s;
-}
-
-.btn-return:hover {
-    background-color: var(--primary-light);
-}
-
-/* Footer */
 footer {
     background-color: var(--primary);
     color: #ffffff;
