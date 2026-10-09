@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Standards | Infancia Sana</title>
+    <meta name="description" content="Methodological standards for evidence classification and case intake under the Infancia Sana protocol.">
+    <meta name="author" content="Ricardo Corona">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="brand">
+                <span class="logo-badge">⚖️</span>
+                <h1>Infancia Sana</h1>
+            </div>
+            <div class="header-controls">
+                <button id="lang-toggle" class="btn-lang" aria-label="Switch language">EN</button>
+                <button id="menu-btn" class="hamburger" aria-label="Toggle navigation menu">&#9776;</button>
+            </div>
+        </div>
+        <nav id="nav-bar" aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html" data-i18n="nav_home">Inicio</a></li>
+                <li><a href="cases.html" class="active" data-i18n="nav_cases">Estándares y Casos</a></li>
+                <li><a href="events.html" data-i18n="nav_events">Eventos y Convocatorias</a></li>
+                <li><a href="contact.html" data-i18n="nav_contact">Solicitar Admisión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-banner">
+            <h2 data-i18n="cases_banner_title">Estándares de Evaluación y Pruebas</h2>
+            <p data-i18n="cases_banner_desc">Metodología formal para la integración objetiva de expedientes y defensa del debido proceso.</p>
+        </section>
+
+        <div class="content-grid">
+            <section class="card">
+                <img src="images/case-review.png" alt="Attorney taking notes on verified documentation folders" width="600" height="220" loading="lazy">
+                <h3 data-i18n="cases_card1_title">Distinción Probatoria</h3>
+                <p data-i18n="cases_card1_desc">Para evitar acusaciones infundadas o prejuzgamientos, todo expediente clasifica:</p>
+                <ul>
+                    <li data-i18n="cases_c1_i1">Hecho Objetivo: Acontecimiento verificable con fecha, lugar y documento legal que lo respalda.</li>
+                    <li data-i18n="cases_c1_i2">Manifestación: Testimonio unilateral que debe atribuirse formalmente a quien lo expresa.</li>
+                    <li data-i18n="cases_c1_i3">Indicio Auxiliar: Elemento circunstancial que requiere corroboración judicial plena.</li>
+                    <li data-i18n="cases_c1_i4">Determinación de Autoridad: Acuerdos, autos o sentencias firmes dictadas por juzgados competentes.</li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h3 data-i18n="cases_card2_title">Clasificación de Expedientes</h3>
+                <p data-i18n="cases_card2_desc">Niveles de priorización institucional:</p>
+                <ul>
+                    <li data-i18n="cases_c2_i1">Conflicto Familiar Particular: Disputas de custodia y regímenes de convivencia ordinarios.</li>
+                    <li data-i18n="cases_c2_i2">Dilación u Omisión Institucional: Retrasos procesales injustificados imputables a juzgados o fiscalías.</li>
+                    <li data-i18n="cases_c2_i3">Mala Práctica Profesional: Omisiones o plazos precluidos atribuibles a abogados postulantes.</li>
+                    <li data-i18n="cases_c2_i4">Patrón Sistémico: Prácticas judiciales contrarias a la Convención de los Derechos del Niño.</li>
+                </ul>
+                <div class="badge-list">
+                    <span class="badge">Debida Diligencia</span>
+                    <span class="badge">Datos Personales</span>
+                    <span class="badge">Imparcialidad</span>
+                </div>
+                <a href="contact.html" class="btn-cta" data-i18n="cases_btn_cta">Presentar Expediente a Revisión</a>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> <span data-i18n="footer_text">Ricardo Corona | Chalco, México</span> | <a href="references.html" data-i18n="footer_refs">Referencias</a></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

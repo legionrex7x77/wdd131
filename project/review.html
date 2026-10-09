@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intake Submitted | Infancia Sana</title>
+    <meta name="description" content="Confirmation page acknowledging received intake requests with session tracking.">
+    <meta name="author" content="Ricardo Corona">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="brand">
+                <span class="logo-badge">⚖️</span>
+                <h1>Infancia Sana</h1>
+            </div>
+            <div class="header-controls">
+                <button id="lang-toggle" class="btn-lang" aria-label="Switch language">EN</button>
+                <button id="menu-btn" class="hamburger" aria-label="Toggle navigation menu">&#9776;</button>
+            </div>
+        </div>
+        <nav id="nav-bar" aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html" data-i18n="nav_home">Inicio</a></li>
+                <li><a href="cases.html" data-i18n="nav_cases">Estándares y Casos</a></li>
+                <li><a href="events.html" data-i18n="nav_events">Eventos y Convocatorias</a></li>
+                <li><a href="contact.html" data-i18n="nav_contact">Solicitar Admisión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="confirmation-card">
+            <div class="success-icon">&#10004;</div>
+            <h2 data-i18n="review_title">Solicitud Recibida Correctamente</h2>
+            <p data-i18n="review_desc">La información ha sido registrada para análisis técnico bajo el protocolo Infancia Sana.</p>
+            
+            <div class="counter-display">
+                <p><span data-i18n="review_counter_label">Total de solicitudes tramitadas en este navegador:</span> <strong id="consultation-counter">0</strong></p>
+            </div>
+
+            <a href="index.html" class="btn-cta" data-i18n="review_btn_home">Volver al Inicio</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> <span data-i18n="footer_text">Ricardo Corona | Chalco, México</span> | <a href="references.html" data-i18n="footer_refs">Referencias</a></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>References &amp; Citations | Infancia Sana</title>
+    <meta name="description" content="Academic references, citations, legal frameworks, and digital image attributions for the Infancia Sana project.">
+    <meta name="author" content="Ricardo Corona">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="brand">
+                <span class="logo-badge">⚖️</span>
+                <h1>Infancia Sana</h1>
+            </div>
+            <div class="header-controls">
+                <button id="lang-toggle" class="btn-lang" aria-label="Switch language">EN</button>
+                <button id="menu-btn" class="hamburger" aria-label="Toggle navigation menu">&#9776;</button>
+            </div>
+        </div>
+        <nav id="nav-bar" aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html" data-i18n="nav_home">Inicio</a></li>
+                <li><a href="cases.html" data-i18n="nav_cases">Estándares y Casos</a></li>
+                <li><a href="events.html" data-i18n="nav_events">Eventos y Convocatorias</a></li>
+                <li><a href="contact.html" data-i18n="nav_contact">Solicitar Admisión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-banner">
+            <h2 data-i18n="ref_banner_title">Fuentes, Referencias y Créditos</h2>
+            <p data-i18n="ref_banner_desc">Marco de citación legal, tipografía y atribución de recursos visuales del portal Infancia Sana.</p>
+        </section>
+
+        <div class="content-grid">
+            <!-- Legal Framework & Protocols -->
+            <section class="card">
+                <h3 data-i18n="ref_card1_title">Marco Jurídico e Institucional</h3>
+                <ul>
+                    <li data-i18n="ref_card1_item1"><strong>Protocolo Institucional:</strong> Protocolo Nacional de Recepción, Investigación, Verificación y Dictaminación Jurídica de Casos (Infancia Sana, Versión 1.0, 2026).</li>
+                    <li data-i18n="ref_card1_item2"><strong>Tratados Internacionales:</strong> Convención sobre los Derechos del Niño (ONU, 1989), Artículos 3 (Interés Superior) y 9 (No separación arbitraria).</li>
+                    <li data-i18n="ref_card1_item3"><strong>Control Constitucional:</strong> Constitución Política de los Estados Unidos Mexicanos, Artículos 1, 4, 8, 14, 16 y 17.</li>
+                </ul>
+            </section>
+
+            <!-- Typography & Font Licensing -->
+            <section class="card">
+                <h3 data-i18n="ref_card2_title">Tipografía y Licenciamiento Web</h3>
+                <ul>
+                    <li data-i18n="ref_card2_item1"><strong>Familia Tipográfica:</strong> Kanit, diseñada por Cadson Demak.</li>
+                    <li data-i18n="ref_card2_item2"><strong>Distribución:</strong> Google Fonts API bajo licencia SIL Open Font License (OFL).</li>
+                    <li data-i18n="ref_card2_item3"><strong>Uso:</strong> Encabezados con pesos 600 y 700; cuerpo regular 400 y altura de línea 1.6 para accesibilidad.</li>
+                </ul>
+            </section>
+
+            <!-- Visual Media Assets -->
+            <section class="card">
+                <h3 data-i18n="ref_card3_title">Recursos Gráficos y Atribución</h3>
+                <ul>
+                    <li data-i18n="ref_card3_item1"><strong>Vectores SVG del Portal:</strong> Diagramas vectoriales originales generados a medida para hero banner, balanza de legalidad, auditoría documental y agenda cívica.</li>
+                    <li data-i18n="ref_card3_item2"><strong>Wireframes de Planeación:</strong> Bocetos esquemáticos para resoluciones móvil y de escritorio en siteplan.html.</li>
+                    <li data-i18n="ref_card3_item3"><strong>Iconografía Semántica:</strong> Símbolos Unicode estándar (⚖️, ✓, &#9776;) para compatibilidad sin dependencias externas.</li>
+                </ul>
+            </section>
+
+            <!-- Academic Metadata -->
+            <section class="card">
+                <h3 data-i18n="ref_card4_title">Ficha Técnica del Proyecto</h3>
+                <ul>
+                    <li data-i18n="ref_card4_item1"><strong>Materia:</strong> WDD 131 - Dynamic Web Fundamentals</li>
+                    <li data-i18n="ref_card4_item2"><strong>Institución:</strong> BYU-Pathway Worldwide / BYU-Idaho</li>
+                    <li data-i18n="ref_card4_item3"><strong>Desarrollador:</strong> Ricardo Corona</li>
+                    <li data-i18n="ref_card4_item4"><strong>Sede:</strong> Chalco, Estado de México, México</li>
+                </ul>
+                <div class="badge-list">
+                    <span class="badge">W3C Validated</span>
+                    <span class="badge">Semantic HTML5</span>
+                    <span class="badge">WCAG Accessible</span>
+                </div>
+                <a href="index.html" class="btn-cta" data-i18n="ref_btn_home">Volver al Portal Principal</a>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> <span data-i18n="footer_text">Ricardo Corona | Chalco, México</span> | <a href="references.html" data-i18n="footer_refs">Referencias</a></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

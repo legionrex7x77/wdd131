@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Intake | Infancia Sana</title>
+    <meta name="description" content="Submit a confidential intake request for legal documentation review with Infancia Sana.">
+    <meta name="author" content="Ricardo Corona">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="brand">
+                <span class="logo-badge">⚖️</span>
+                <h1>Infancia Sana</h1>
+            </div>
+            <div class="header-controls">
+                <button id="lang-toggle" class="btn-lang" aria-label="Switch language">EN</button>
+                <button id="menu-btn" class="hamburger" aria-label="Toggle navigation menu">&#9776;</button>
+            </div>
+        </div>
+        <nav id="nav-bar" aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html" data-i18n="nav_home">Inicio</a></li>
+                <li><a href="cases.html" data-i18n="nav_cases">Estándares y Casos</a></li>
+                <li><a href="events.html" data-i18n="nav_events">Eventos y Convocatorias</a></li>
+                <li><a href="contact.html" class="active" data-i18n="nav_contact">Solicitar Admisión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-banner">
+            <h2 data-i18n="contact_banner_title">Solicitud Confidencial de Admisión</h2>
+            <p data-i18n="contact_banner_desc">Ingresa la información básica de tu expediente para evaluación institucional previa.</p>
+        </section>
+
+        <form method="get" action="review.html">
+            <!-- Full Name -->
+            <div class="form-group">
+                <label for="full-name"><span data-i18n="form_label_name">Nombre Completo</span> <span class="req">*</span></label>
+                <input type="text" id="full-name" name="fullName" required placeholder="First & Last Name">
+            </div>
+
+            <!-- Email Address -->
+            <div class="form-group">
+                <label for="user-email"><span data-i18n="form_label_email">Correo Electrónico</span> <span class="req">*</span></label>
+                <input type="email" id="user-email" name="userEmail" required placeholder="name@domain.com">
+            </div>
+
+            <!-- Category / Nature of Case -->
+            <div class="form-group">
+                <label for="case-category"><span data-i18n="form_label_scope">Naturaleza de la Situación</span> <span class="req">*</span></label>
+                <select id="case-category" name="caseCategory" required>
+                    <option value="" disabled selected data-i18n="opt_default">Selecciona una opción...</option>
+                    <option value="visitation" data-i18n="opt_visitation">Incumplimiento o retención de régimen de visitas</option>
+                    <option value="delay" data-i18n="opt_delay">Retraso injustificado u omisión judicial</option>
+                    <option value="counsel" data-i18n="opt_counsel">Negligencia o mala práctica de defensa legal</option>
+                    <option value="emergency" data-i18n="opt_emergency">Riesgo inminente o afectación grave a un menor</option>
+                </select>
+            </div>
+
+            <!-- Date of Latest Court Filing -->
+            <div class="form-group">
+                <label for="action-date"><span data-i18n="form_label_date">Fecha del Último Auto o Incidente</span> <span class="req">*</span></label>
+                <input type="date" id="action-date" name="actionDate" required>
+            </div>
+
+            <!-- Urgency Level Radio Group -->
+            <fieldset class="radio-group">
+                <legend><span data-i18n="form_legend_urgency">Nivel de Urgencia</span> <span class="req">*</span></legend>
+                <label for="urgency-std" class="inline-label">
+                    <input type="radio" id="urgency-std" name="urgency" value="Standard" required>
+                    <span data-i18n="form_urg_std">Estándar (Revisión ordinaria)</span>
+                </label>
+                <label for="urgency-high" class="inline-label">
+                    <input type="radio" id="urgency-high" name="urgency" value="High" required>
+                    <span data-i18n="form_urg_high">Alta (Término legal próximo)</span>
+                </label>
+                <label for="urgency-urgent" class="inline-label">
+                    <input type="radio" id="urgency-urgent" name="urgency" value="Urgent" required>
+                    <span data-i18n="form_urg_urg">Urgente (Riesgo inmediato a derechos del menor)</span>
+                </label>
+            </fieldset>
+
+            <!-- Documentation Checkboxes -->
+            <fieldset class="checkbox-group">
+                <legend><span data-i18n="form_legend_docs">Documentación Disponible</span></legend>
+                <label for="doc-orders" class="inline-label">
+                    <input type="checkbox" id="doc-orders" name="docs" value="courtOrders">
+                    <span data-i18n="form_doc_orders">Convenios o Sentencias Judiciales Firmes</span>
+                </label>
+                <label for="doc-log" class="inline-label">
+                    <input type="checkbox" id="doc-log" name="docs" value="incidentLog">
+                    <span data-i18n="form_doc_log">Bitácora Cronológica de Visitas / Hechos</span>
+                </label>
+                <label for="doc-complaints" class="inline-label">
+                    <input type="checkbox" id="doc-complaints" name="docs" value="priorComplaints">
+                    <span data-i18n="form_doc_complaints">Quejas o Denuncias Previas</span>
+                </label>
+            </fieldset>
+
+            <!-- Factual Summary -->
+            <div class="form-group">
+                <label for="case-summary"><span data-i18n="form_label_summary">Resumen de Hechos Relevantes</span> <span class="req">*</span></label>
+                <textarea id="case-summary" name="caseSummary" rows="4" required placeholder="Describe dates, jurisdiction, and specific procedural obstacles..."></textarea>
+            </div>
+
+            <input type="submit" value="Enviar Solicitud de Admisión" data-i18n="form_btn_submit">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> <span data-i18n="footer_text">Ricardo Corona | Chalco, México</span> | <a href="references.html" data-i18n="footer_refs">Referencias</a></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

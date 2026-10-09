@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infancia Sana | Child Rights &amp; Legal Oversight Portal</title>
+    <meta name="description" content="Informational portal dedicated to child protection, case documentation, and institutional accountability under the Infancia Sana protocol.">
+    <meta name="author" content="Ricardo Corona">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="brand">
+                <span class="logo-badge">⚖️</span>
+                <h1>Infancia Sana</h1>
+            </div>
+            <div class="header-controls">
+                <button id="lang-toggle" class="btn-lang" aria-label="Switch language">EN</button>
+                <button id="menu-btn" class="hamburger" aria-label="Toggle navigation menu">&#9776;</button>
+            </div>
+        </div>
+        <nav id="nav-bar" aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html" class="active" data-i18n="nav_home">Inicio</a></li>
+                <li><a href="cases.html" data-i18n="nav_cases">Estándares y Casos</a></li>
+                <li><a href="events.html" data-i18n="nav_events">Eventos y Convocatorias</a></li>
+                <li><a href="contact.html" data-i18n="nav_contact">Solicitar Admisión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-banner">
+            <h2 data-i18n="hero_title">Por el Interés Superior de la Niñez</h2>
+            <p data-i18n="hero_desc">Guía objetiva y fundamentada para familias y profesionistas ante procesos jurídicos y omisiones institucionales.</p>
+        </section>
+
+        <div class="content-grid">
+            <section class="card">
+                <img src="images/family-union.jpg" alt="Parent holding hands with children in an open park" width="600" height="220" loading="eager">
+                <h3 data-i18n="home_card1_title">Marco Institucional y Legal</h3>
+                <p data-i18n="home_card1_desc">Nuestra labor se rige bajo el principio de estricta legalidad y el parámetro de regularidad constitucional de México y tratados internacionales:</p>
+                <ul>
+                    <li data-i18n="home_card1_item1">No sustitución: Orientamos y documentamos; no reemplazamos las facultades del Poder Judicial ni del Ministerio Público.</li>
+                    <li data-i18n="home_card1_item2">Diferenciación probatoria: Distinción técnica entre hechos objetivos, testimonios e indicios.</li>
+                    <li data-i18n="home_card1_item3">Debido proceso: Respeto absoluto a la presunción de inocencia y protección de datos personales de menores.</li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <img src="images/legal-justice.jpeg" alt="Bronze scales of justice on top of a legal desk" width="600" height="220" loading="lazy">
+                <h3 data-i18n="home_card2_title">Asistente Jurídico de Orientación</h3>
+                <p data-i18n="home_card2_desc">Selecciona tu situación para evaluar la ruta correspondiente:</p>
+                
+                <form id="assistant-form">
+                    <div class="form-group">
+                        <label for="issue-select" data-i18n="home_assistant_label">Selecciona una situación principal:</label>
+                        <select id="issue-select" required>
+                            <option value="" disabled selected data-i18n="opt_default">Selecciona una opción...</option>
+                            <option value="visitation" data-i18n="opt_visitation">Incumplimiento o retención de régimen de visitas</option>
+                            <option value="delay" data-i18n="opt_delay">Retraso injustificado u omisión judicial</option>
+                            <option value="counsel" data-i18n="opt_counsel">Negligencia o mala práctica de defensa legal</option>
+                            <option value="emergency" data-i18n="opt_emergency">Riesgo inminente o afectación grave a un menor</option>
+                        </select>
+                    </div>
+                    <input type="submit" value="Evaluar Ruta Procesal" data-i18n="btn_evaluate">
+                </form>
+
+                <div id="assistant-result" class="result-box hidden" aria-live="polite">
+                    <h4 id="result-title"></h4>
+                    <p id="result-text"></p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> <span data-i18n="footer_text">Ricardo Corona | Chalco, México</span> | <a href="references.html" data-i18n="footer_refs">Referencias</a></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
